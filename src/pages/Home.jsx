@@ -16,7 +16,7 @@ const Home = () => {
 
   
                  useEffect(()=> {
-                    fetch(`https://assignment11-server-site-ecru.vercel.app/food`)
+                    fetch(`https://food-sharing-self.vercel.app/food`)
                         .then(res => res.json())
                         .then(data => {
                             console.log(data);

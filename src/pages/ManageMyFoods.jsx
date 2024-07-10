@@ -10,7 +10,7 @@ const ManageMyFoods = () => {
     // const [bookings, setBookings] = useState([]);
   
     useEffect(()=> {
-        fetch(`https://assignment11-server-site-ecru.vercel.app/request/${user?.email}`)
+        fetch(`https://food-sharing-self.vercel.app/request/${user?.email}`)
         .then(res => res.json())
         .then(data => {
             console.log(data);
@@ -21,7 +21,7 @@ const ManageMyFoods = () => {
     const handleDelete = id => {
         const proceed = confirm('Are You Sure your want to delete');
         if(proceed){
-            fetch(`https://assignment11-server-site-ecru.vercel.app/food/${id}`, {
+            fetch(`https://food-sharing-self.vercel.app/food/${id}`, {
                 method: 'DELETE',
 
             })

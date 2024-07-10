@@ -19,13 +19,13 @@ const AvailableFoods = () => {
 
     useEffect(() => {
 
-        // fetch(`https://assignment11-server-site-ecru.vercel.app/food`)
+        // fetch(`https://food-sharing-self.vercel.app/food`)
         // .then(res => res.json())
         // .then(data => {
         //     console.log(data);
         //     setItem(data)
         // })
-        axios.get(`https://assignment11-server-site-ecru.vercel.app/food?sort=${asc ? 'asc' : 'desc'}&search=${search}`)
+        axios.get(`https://food-sharing-self.vercel.app/food?sort=${asc ? 'asc' : 'desc'}&search=${search}`)
             .then(response => {
                 console.log(response.data);
                 setItem(response.data)

@@ -51,12 +51,12 @@ import Update from "../pages/Update";
         {
             path: '/updated/:id',
             element: <Update></Update>,
-            loader: ({params}) => fetch(`https://assignment11-server-site-ecru.vercel.app/food/${params.id}`)
+            loader: ({params}) => fetch(`https://food-sharing-self.vercel.app/food/${params.id}`)
         },
         {
           path: '/viewdetails/:id',
           element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
-          loader: ({params}) => fetch(`https://assignment11-server-site-ecru.vercel.app/food/${params.id}`)
+          loader: ({params}) => fetch(`https://food-sharing-self.vercel.app/food/${params.id}`)
         }
       ]
     },

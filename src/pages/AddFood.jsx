@@ -26,7 +26,7 @@ const AddFood = () => {
 
 
         // send data to the server
-        fetch('https://assignment11-server-site-ecru.vercel.app/food', {
+        fetch('https://food-sharing-self.vercel.app/food', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

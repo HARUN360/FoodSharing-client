@@ -13,7 +13,7 @@ const FoodRequest = () => {
 
     const {data, isLoadin, refetch, isError, Error } = useQuery({
         queryFn: async () => {
-           const tanStackValue =await axios.get(`https://assignment11-server-site-ecru.vercel.app/requist1/${user?.email}`)
+           const tanStackValue =await axios.get(`https://food-sharing-self.vercel.app/requist1/${user?.email}`)
            console.log(tanStackValue);
            return tanStackValue.data;
               

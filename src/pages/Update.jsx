@@ -29,7 +29,7 @@ const Update = () => {
       
 
           // send data to the server
-          fetch(`https://assignment11-server-site-ecru.vercel.app/food/${_id}`, {
+          fetch(`https://food-sharing-self.vercel.app/food/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

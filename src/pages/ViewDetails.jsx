@@ -27,7 +27,7 @@ const ViewDetails = () => {
 
 
         // send data to the server
-        fetch('https://assignment11-server-site-ecru.vercel.app/add', {
+        fetch('https://food-sharing-self.vercel.app/add', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -38,7 +38,7 @@ const ViewDetails = () => {
             .then(data => {
                 console.log('this is information', data);
                 if (data.insertedId) {
-                    fetch(`https://assignment11-server-site-ecru.vercel.app/food/${_id}`, {
+                    fetch(`https://food-sharing-self.vercel.app/food/${_id}`, {
                         method: 'DELETE',
                     })
                         .then(res => res.json())
